@@ -7,7 +7,7 @@
             <h6 class="text-uppercase">DỊCH VỤ CHÍNH</h6>
         </div>
         <!-- end row -->
-        <div class="services__tab-title">
+        <div class="services__tab-title d-none">
             <ul class="nav nav-tabs d-flex justify-content-center">
                 <li class="nav-item">
                     <a href="#tab_1" class="nav-link text-capitalize active" data-toggle="tab">Máy Lạnh</a>
