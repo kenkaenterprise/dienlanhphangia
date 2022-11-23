@@ -1,5 +1,5 @@
 <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'url' ); ?>/wp-content/themes/wp-bootstrap-4/assets/css/slide/style-slide.css" />
+<link rel="stylesheet" type="text/css" href="<?= get_stylesheet_directory_uri() ?>/assets/css/slide/style-slide.css" />
 <!-- Start WOWSlider -->
 <div id="wowslider-container1">
 <div class="ws_images">
@@ -23,5 +23,5 @@
 </div>
 </div>
 <!-- End WOWSlider -->
-<script src="<?php bloginfo( 'url' ); ?>/wp-content/themes/wp-bootstrap-4/assets/js/slide/wowslider.js"></script>
-<script src="<?php bloginfo( 'url' ); ?>/wp-content/themes/wp-bootstrap-4/assets/js/slide/script.js"></script>
+<script src="<?= get_stylesheet_directory_uri() ?>/assets/js/slide/wowslider.js"></script>
+<script src="<?= get_stylesheet_directory_uri() ?>/assets/js/slide/script.js"></script>
