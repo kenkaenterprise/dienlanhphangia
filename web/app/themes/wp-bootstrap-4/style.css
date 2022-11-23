@@ -534,9 +534,8 @@ div {
     font-weight: bold;
 }
 
-div .header__main .text_phone p {
+.header__main .text_phone p {
     margin: 0;
-    display: inline-block;
 }
 
 /*---------------- MENU -------------*/
