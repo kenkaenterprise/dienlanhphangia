@@ -538,6 +538,18 @@ div {
     margin: 0;
 }
 
+.text_phone {
+    font-size: 14px;
+}
+.text_phone .title {
+    display: inline-block;
+}
+.title+.number {
+    display: inline-block;
+    color: #00669b !important;
+    font-weight: bold;
+}
+
 /*---------------- MENU -------------*/
 .menu_area {
     position: relative;
