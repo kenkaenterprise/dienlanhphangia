@@ -20,7 +20,7 @@
                 <div class="footer_title">
                     <h6>FANPAGE FACEBOOK</h6>
                 </div>
-                <iframe src="https://www.facebook.com/plugins/page.php?href=<?php the_field( 'fanpage', 'options' ); ?>&amp;tabs=dong%20thoi%20gian&amp;width=340&amp;height=160&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <?php the_field('iframe_fb_fanpage', 'options') ?>
                 <div class="logo_bct">
                     <a href="http://online.gov.vn/Home/WebDetails/84908?AspxAutoDetectCookieSupport=1" target="_blank">
                         <img src="<?php bloginfo( 'url' ); ?>/wp-content/themes/wp-bootstrap-4/assets/images/icon_bct.png" alt="">
