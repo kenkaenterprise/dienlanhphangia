@@ -9,12 +9,14 @@
               {
                   $category_ids = array();
                   foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
-           
-                  $args=array(
-                  'category__in' => $category_ids,
-                  'post__not_in' => array($post->ID),
-                  'showposts'=>6, // Số bài viết bạn muốn hiển thị.
-                  'caller_get_posts'=>1
+
+                  $args = array(
+                      'category__in' => $category_ids,
+                      'post__not_in' => array($post->ID),
+                      'showposts' => 6, // Số bài viết bạn muốn hiển thị.
+                      'ignore_sticky_posts' => 1,
+                      'orderby' => 'rand',
+                      'order' => 'DESC',
                   );
                   $my_query = new wp_query($args);
                   if( $my_query->have_posts() ) 
