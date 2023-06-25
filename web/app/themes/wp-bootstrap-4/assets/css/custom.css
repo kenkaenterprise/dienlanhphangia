@@ -657,3 +657,17 @@ ul.news__post__list {
 iframe.fb_iframe_widget_lift {
     width: 100% !important;
 }
+#secondary.scrollTopPosition200 {
+    position: fixed;
+    width: 255px;
+    top: 0;
+}
+#secondary.scrollTopPosition320 {
+    position: fixed;
+    width: 255px;
+    top: 40px;
+}
+#secondary.scrollTopPositionFixed2Static {
+    position: unset;
+    width: 255px;
+}

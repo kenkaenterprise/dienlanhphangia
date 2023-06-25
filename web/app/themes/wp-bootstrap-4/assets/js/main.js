@@ -211,3 +211,47 @@ var swiper4 = new Swiper('.swiper4', {
   });
 
 });
+
+// ADD css class to make sidebar sticky
+let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+let $singlePost = jQuery('.single-post');
+let $singleProduct =  jQuery('.single-thanh-ly');
+if ($singlePost.length > 0 || $singleProduct.length > 0) {
+  let $sidebar = jQuery('#secondary');
+
+  // Check if page is product or news
+  if ($singleProduct.length > 0) {
+    blockContent = jQuery('.block_thanhly');
+  } else {
+    blockContent = jQuery('.site-main');
+  }
+  window.addEventListener('scroll', function handleScroll() {
+    const scrollTopPosition = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTopPosition >= 320) {
+      $sidebar.addClass('scrollTopPosition320');
+      $sidebar.removeClass('scrollTopPosition200');
+      $sidebar.removeClass('scrollTopPositionFixed2Static');
+    } else if (scrollTopPosition >= 200) {
+      $sidebar.addClass('scrollTopPosition200');
+      $sidebar.removeClass('scrollTopPosition320');
+      $sidebar.removeClass('scrollTopPositionFixed2Static');
+    } else {
+      $sidebar.removeClass('scrollTopPosition200');
+      $sidebar.removeClass('scrollTopPosition320');
+      $sidebar.removeClass('scrollTopPositionFixed2Static');
+    }
+
+    if ((jQuery(window).scrollTop() + jQuery(window).height()) >= blockContent.height()) {
+      $sidebar.addClass('scrollTopPositionFixed2Static');
+      let marginTop = blockContent.height() - jQuery(window).height() - 100;
+      $sidebar.css('margin-top', marginTop);
+      $sidebar.removeClass('scrollTopPosition200');
+      $sidebar.removeClass('scrollTopPosition320');
+    } else {
+      $sidebar.css('margin-top', '15px');
+      $sidebar.removeClass('scrollTopPositionFixed2Static');
+    }
+
+    lastScrollTop = scrollTopPosition <= 0 ? 0 : scrollTopPosition;
+  }, false);
+}

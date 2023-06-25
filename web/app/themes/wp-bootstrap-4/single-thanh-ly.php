@@ -22,7 +22,7 @@ get_header(); ?>
 				<?php get_sidebar(); ?>
 			</div>
 
-            <div class="col-lg-9">
+            <div class="col-lg-9 block_thanhly">
             	<div class="row">
 					<!-- CỘT GALLERY -->
 					<div class="col-lg-7 col-md-7 mt-2r">
