@@ -71,14 +71,14 @@
     margin-bottom: 10px;
     height: 30px;
     color: #fff;
-    background: #00669b;
+    background: #00A0E4;
     border-radius: 20px;
     padding: 0 10px 0 2px;
 }
 .btnClick i {
     border-radius: 50%;
     background: #fff;
-    color: #00669b;
+    color: #00A0E4;
     width: 26px;
     height: 26px;
     text-align: center;
@@ -86,7 +86,7 @@
     margin-top: 2px;
 }
 .btnClick a.zalo {
-    background: #00669b url(<?php bloginfo( 'url' ); ?>/wp-content/themes/wp-bootstrap-4/assets/images/zaloIcon1.png) no-repeat left 2px center;
+    background: #00A0E4 url(<?php bloginfo( 'url' ); ?>/wp-content/themes/wp-bootstrap-4/assets/images/zaloIcon1.png) no-repeat left 2px center;
     background-size: 25px auto;
     padding-left: 32px;
     transform: translateY(-1px);

@@ -4,7 +4,7 @@ Theme URI: https://bootstrap-wp.com
 Author: TwoPoints
 Author URI:
 Description: "WP Bootstrap 4" is a simple & easy to use WordPress theme. It is based on world's most popular framework for responsive websites, Twitter Bootstrap 4. "WP Bootstrap 4" is a perfect combination of Bootstrap 4 and WordPress. It is fast and light-weight with around 20 kb style.css. It is also search engine friendly. It has a built-in slider for featured posts on blog's home page. It supports all major & popular WordPress plugins like Jetpack, Contact Form 7, Elementor, Beaver Builder, SiteOrigin Page Builder etc. Check demo on https://bootstrap-wp.com
-Version: 1.0.10
+Version: 1.0.11
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl.html
 Text Domain: wp-bootstrap-4
@@ -1300,7 +1300,7 @@ span.wpcf7-form-control-wrap.your-email,span.wpcf7-form-control-wrap.your-messag
 /*---------------- FOOTER-------------*/
 /*--------- FOOTER -------------*/
 .footer_area {
-    background-color: rgb(0, 102, 155);
+    background-color: #00A0E4;
     color: #fff;
     padding-bottom: 0rem;
 }

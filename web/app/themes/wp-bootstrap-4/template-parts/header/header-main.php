@@ -17,10 +17,60 @@
     #mainheader .mainlogo, #mainheader .infohotline {
         display: flex;
         flex-direction: row;
+        margin-left: 58px;
     }
 
     #mainheader .infohotline dt, #mainheader .infohotline dd {
         display: inline-block;
+        margin: 0;
+    }
+
+    #mainheader .service1, #mainheader .service2 {
+        position: relative;
+    }
+    #mainheader .list-service li {
+        line-height: 36px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #mainheader .service1:before, #mainheader .service2:before {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        content: " ";
+        left: -32px;
+        top: 6px;
+
+    }
+    #mainheader .service1:before {
+        background: url("https://dienlanhphangia.com/wp-content/uploads/2024/03/rangcua1.png");
+    }
+
+    #mainheader .service2:before {
+        background: url("https://dienlanhphangia.com/wp-content/uploads/2024/03/rangcua2.png");
+    }
+
+    .list-service {
+        list-style-type: none;
+    }
+    #mainheader .info-detail {
+        font-weight: bold;
+        padding-top: 10px;
+        margin-right: 39px;
+    }
+    #mainheader .info-detail .line2 {
+        font-weight: bold;
+        margin-left: 4px;
+        font-size: 28px;
+    }
+
+    #mainheader .divonright {
+        margin-left: 10px;
+    }
+    #mainheader .divonright dl {
+        margin: 0;
+        font-size: 13px;
+        line-height: 24px;
     }
 </style>
 <div class="d-none d-lg-block d-xl-block">
@@ -50,8 +100,8 @@
                 </div>
                 <div class="infocontact">
                     <ul class="list-service">
-                        <li class="service1">Lắp đặt chuyên nghiệp</li>
-                        <li class="service2">Bảo hành chính hãng</li>
+                        <li class="service1">LẮP ĐẶT CHUYÊN NGHIỆP</li>
+                        <li class="service2">BẢO HÀNH CHÍNH HÃNG</li>
                     </ul>
                 </div>
                 <div class="infohotline">
