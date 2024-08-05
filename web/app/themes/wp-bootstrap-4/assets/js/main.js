@@ -191,6 +191,41 @@ var swiper4 = new Swiper('.swiper4', {
   }
 });
 
+// Display news about the project (cong-trinh) in the form of a swiper.
+var swiper5 = new Swiper('.swiper5', {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 5000,
+  },
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next_5',
+    prevEl: '.swiper-button-prev_5',
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    }
+  }
+});
+
+
+// END.
+
   // Gallery sản phẩm 
   jQuery('.gallery-sp').slick({
     slidesToShow: 1,
