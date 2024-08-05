@@ -373,7 +373,7 @@ ul#crumbs {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: #00669b;
+    background-color: #00A0E4;
     padding: 3px 15px;
 }
 .single__item__cate a {
@@ -435,7 +435,7 @@ h3.title-head:after {
     width: 76px;
     height: 2px;
     display: inline-block;
-    background: #00669b;
+    background: #00A0E4;
     position: absolute;
 }
 .title-head {
@@ -509,7 +509,7 @@ div#form-contact textarea {
 	clear: both;
 }
 #form-contact input.wpcf7-form-control.wpcf7-submit {
-    background-color: #00669b;
+    background-color: #00A0E4;
     border: none;
     color: #fff;
     padding: 5px 40px;
@@ -536,7 +536,7 @@ div#form-contact textarea {
     margin: 0 3px;
 }
 span.page-numbers.current {
-    background-color: #00669b;
+    background-color: #00A0E4;
     color: #fff;
     padding: 4px 11px;
     margin: 0 3px;
@@ -547,7 +547,7 @@ ul.related__list>li>a:hover img {
 }
 ul.related__list>li>a:hover {
     text-decoration: none;
-    color: #00669b;
+    color: #00A0E4;
 }
 ul.related__list>li>a {
     transition: all .3s;
