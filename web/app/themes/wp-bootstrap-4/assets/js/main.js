@@ -223,6 +223,18 @@ var swiper5 = new Swiper('.swiper5', {
   }
 });
 
+var swiper6 = new Swiper('.swiper6', {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 5000,
+  },
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next_6',
+    prevEl: '.swiper-button-prev_6',
+  }
+});
 
 // END.
 

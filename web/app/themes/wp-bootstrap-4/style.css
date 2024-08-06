@@ -876,6 +876,48 @@ div {
     color: #424242;
 }
 
+.advertisement-block {
+    display: flex;
+    padding: 20px;
+}
+
+.left-column {
+    flex: 0 0 25%; /* Fixed width of 25% */
+    padding: 20px;
+}
+
+.ad-title {
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-family: "segoeui_black";
+}
+
+.ad-description {
+    font-size: 1.4rem;
+}
+
+.right-column {
+    flex: 0 0 75%; /* Fixed width of 75% */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.sub-block {
+    background-size: cover; /* Ensures the background image covers the block */
+    background-position: center; /* Centers the background image */
+    width: 263px; /* Fixed width for sub-blocks */
+    height: 353px; /* Fixed height for sub-blocks */
+    margin-bottom: 10px; /* Space between sub-blocks */
+    display: flex;
+    align-items: center; /* Vertically centers the title */
+    justify-content: center; /* Horizontally centers the title */
+    color: white; /* Text color for titles */
+    font-size: 18px; /* Font size for titles */
+    border-radius: 4px; /* Optional rounded corners for sub-blocks */
+}
+
 /*---------------- TESTIMONIAL -------------*/
 .testi_area .swiper-button-next,
 .testi_area .swiper-container-rtl .swiper-button-prev {
