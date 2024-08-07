@@ -2,7 +2,7 @@
 <div class="advertisement-block">
 
 <div class="left-column">
-        <h2 class="ad-title">Giải pháp điều hoà</h2>
+        <h2 class="ad-title text-uppercase">Giải pháp điều hoà</h2>
         <p class="ad-description">Daikin là nhà sản xuất máy điều hòa không khí hàng đầu thế giới và các sản phẩm của chúng tôi được bán tại hơn 140 quốc gia. Kể từ đầu những năm 1930, chúng tôi đã tiến một bước dài trong việc hiện thực hóa một môi trường và chất lượng cuộc sống tốt hơn thông qua việc cung cấp các giải pháp điều hòa không khí. Khám phá tiếng nói của khách hàng, công nghệ quan trọng và câu chuyện của chúng tôi. Khám phá Daikin.</p>
     </div>
     <div class="right-column">

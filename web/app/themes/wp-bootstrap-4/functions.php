@@ -547,7 +547,7 @@ function create_sample_product_featured_data() {
         'numberposts' => -1,
     ));
 
-    if (empty($existing_posts) || count(existing_posts) < 5) {
+    if (empty($existing_posts)) {
         for ($i = 1; $i <= 12; $i++) {
             // Prepare post data
             $post_title = 'Product test ' . $i;

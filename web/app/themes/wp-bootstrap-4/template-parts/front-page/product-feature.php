@@ -34,13 +34,13 @@ if (!$product_feature_title) {
                                 while ($product_featured_query->have_posts()) {
                                     $product_featured_query->the_post();
                                     ?>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide text-center">
                                         <article class="article__inner">
                                             
                                             <?php if ( has_post_thumbnail() ) : ?>
                                             <?php the_post_thumbnail(); ?>
                                             <?php elseif ( !has_post_thumbnail() ) : ?>
-                                            <img src="<?php bloginfo( 'url' ); ?>/wp-content/themes/wp-bootstrap-4/assets/images/default-thumbnail.jpg">
+                                            <img src="<?php bloginfo( 'url' ); ?>/wp-content/themes/wp-bootstrap-4/assets/images/default-thumbnail.jpg" alt="">
                                             <?php endif; ?>
                                             
                                             <img src="<?php bloginfo( 'url' ); ?>/wp-content/themes/wp-bootstrap-4/assets/images/home/shadow.png" alt="">
