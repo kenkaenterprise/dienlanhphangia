@@ -501,3 +501,81 @@ add_filter( 'admin_body_class', 'wpa66834_role_admin_body_class' );
 
 
 add_filter( 'use_block_editor_for_post', '__return_false' );
+
+function create_product_featured_post_type() {
+    $labels = array(
+        'name'               => _x('Product Featured', 'post type general name'),
+        'singular_name'      => _x('Product Featured', 'post type singular name'),
+        'menu_name'          => _x('Product Featured', 'admin menu'),
+        'name_admin_bar'     => _x('Product Featured', 'add new on admin bar'),
+        'add_new'            => _x('Add New', 'product featured'),
+        'add_new_item'       => __('Add New Product Featured'),
+        'new_item'           => __('New Product Featured'),
+        'edit_item'          => __('Edit Product Featured'),
+        'view_item'          => __('View Product Featured'),
+        'all_items'          => __('All Product Featured'),
+        'search_items'       => __('Search Product Featured'),
+        'parent_item_colon'  => __('Parent Product Featured:'),
+        'not_found'          => __('No product featured found.'),
+        'not_found_in_trash' => __('No product featured found in Trash.'),
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array('slug' => 'product-featured'),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array('title', 'editor', 'thumbnail'),
+    );
+
+    register_post_type('product_featured', $args);
+}
+
+add_action('init', 'create_product_featured_post_type');
+
+function create_sample_product_featured_data() {
+    // Check if the posts already exist to avoid duplication
+    $existing_posts = get_posts(array(
+        'post_type' => 'product_featured',
+        'numberposts' => -1,
+    ));
+
+    if (empty($existing_posts)) {
+        for ($i = 1; $i <= 12; $i++) {
+            // Prepare post data
+            $post_title = 'Product test ' . $i;
+            $post_content = '<ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Consectetur adipiscing elit.</li>
+                                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                            </ul>';
+            $post_data = array(
+                'post_title'   => $post_title,
+                'post_content' => $post_content,
+                'post_status'  => 'publish',
+                'post_type'    => 'product_featured',
+                'post_author'  => 1, // Assuming the admin user ID is 1
+            );
+
+            // Insert the post into the database
+            $post_id = wp_insert_post($post_data);
+
+            // Set a placeholder image (you can replace this URL with any placeholder image URL)
+            $placeholder_image_url = 'https://via.placeholder.com/150';
+            $image_id = media_sideload_image($placeholder_image_url, $post_id, null, 'id');
+
+            // Set the featured image
+            set_post_thumbnail($post_id, $image_id);
+        }
+    }
+}
+
+// Hook the function to run on admin_init
+add_action('admin_init', 'create_sample_product_featured_data');
