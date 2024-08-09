@@ -6,7 +6,7 @@ get_header(); ?>
         
         <?php get_template_part( 'template-parts/front-page/slide-homepage' ); ?>
         <?php get_template_part( 'template-parts/front-page/start' ); ?>
-        
+        <?php get_template_part( 'template-parts/front-page/product-feature' ); ?>
         <?php get_template_part( 'template-parts/front-page/ads' ); ?>
         <?php get_template_part( 'template-parts/front-page/service' ); ?>
         <!-- // get_template_part( 'template-parts/front-page/thanhly' ); -->
