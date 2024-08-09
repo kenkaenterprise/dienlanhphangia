@@ -36,7 +36,7 @@ if (!$product_feature_title) {
                                     ?>
                                     <div class="swiper-slide text-center">
                                         <article class="article__inner">
-                                            
+                                            <?php $description = get_field('description');  ?>
                                             <?php if ( has_post_thumbnail() ) : ?>
                                             <?php the_post_thumbnail(); ?>
                                             <?php elseif ( !has_post_thumbnail() ) : ?>
@@ -45,8 +45,8 @@ if (!$product_feature_title) {
                                             
                                             <img src="<?php bloginfo( 'url' ); ?>/wp-content/themes/wp-bootstrap-4/assets/images/home/shadow.png" alt="">
                                             <div class="article__content">
-                                                <h5><a href="#" class="text-uppercase text-center"><?php the_title(); ?></a></h5>
-                                                <?php the_content(); ?>
+                                                <h5><a href="#" class="title text-uppercase text-center"><?php the_title(); ?></a></h5>
+                                                <?php echo $description; ?>
                                             </div>
                                         </article>
                                     </div>

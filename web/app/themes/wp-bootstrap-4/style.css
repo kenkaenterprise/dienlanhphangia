@@ -948,8 +948,29 @@ div {
     height: 16px;
     content: " ";
 }
+.swiper6.services__item .swiper-slide {
+    overflow: hidden;
+}
+.swiper6.services__item .swiper-slide .article__inner {
+    overflow: hidden;
+    width: 100%;
+    height: 410px;
+}
+.swiper6.services__item .swiper-slide .article__inner img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+.swiper6.services__item .swiper-slide .article__inner .article__content .title {
+    display: inline-block;
+    margin: 0 auto;
+}
 
 @media (max-width: 768px) {
+    .swiper6.services__item .swiper-slide .article__inner {
+        height: unset;
+    }
     .advertisement-block {
         flex-direction: column;
     }
