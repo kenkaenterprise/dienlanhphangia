@@ -2,7 +2,7 @@
 
 // Query arguments
 $args = array(
-    'post_type'      => 'product_featured', // Custom post type
+    'post_type'      => 'san-pham-noi-bat', // Custom post type
     'posts_per_page' => 30, 
     'orderby'        => 'date', // Order by date
     'order'          => 'DESC' // Descending order
@@ -11,11 +11,8 @@ $args = array(
 // The Query
 $product_featured_query = new WP_Query($args);
 
-$product_feature_title = get_field('product_feature_title', 'option');
-
-if (!$product_feature_title) {
-    $product_feature_title = 'Sản phẩm phù hợp';
-} 
+$grp_rel_prod = get_field('relevant_product', 'option');
+$product_feature_title = $grp_rel_prod['title']?? 'Sản phẩm phù hợp';
 ?>
 <section class="services_area">
     <div class="container">

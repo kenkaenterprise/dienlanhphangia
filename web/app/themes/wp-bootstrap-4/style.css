@@ -932,6 +932,10 @@ div {
     margin: 10px;
 }
 
+.sub-block .sub-title a {
+    color: white;
+}
+
 .swiper6 ul {
     list-style-type: none;
 }
