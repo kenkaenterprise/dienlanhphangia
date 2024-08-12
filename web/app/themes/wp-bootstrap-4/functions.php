@@ -504,20 +504,20 @@ add_filter( 'use_block_editor_for_post', '__return_false' );
 
 function create_product_featured_post_type() {
     $labels = array(
-        'name'               => _x('Product Featured', 'post type general name'),
-        'singular_name'      => _x('Product Featured', 'post type singular name'),
-        'menu_name'          => _x('Product Featured', 'admin menu'),
-        'name_admin_bar'     => _x('Product Featured', 'add new on admin bar'),
-        'add_new'            => _x('Add New', 'product featured'),
-        'add_new_item'       => __('Add New Product Featured'),
-        'new_item'           => __('New Product Featured'),
-        'edit_item'          => __('Edit Product Featured'),
-        'view_item'          => __('View Product Featured'),
-        'all_items'          => __('All Product Featured'),
-        'search_items'       => __('Search Product Featured'),
-        'parent_item_colon'  => __('Parent Product Featured:'),
-        'not_found'          => __('No product featured found.'),
-        'not_found_in_trash' => __('No product featured found in Trash.'),
+        'name'               => 'Sản Phẩm Nổi Bật',
+        'singular_name'      => 'Sản Phẩm Nổi Bật',
+        'menu_name'          => 'Sản Phẩm Nổi Bật',
+        'name_admin_bar'     => 'Sản Phẩm Nổi Bật',
+        'add_new'            => 'Thêm Sản Phẩm Nổi Bật',
+        'add_new_item'       => 'Thêm Sản Phẩm Nổi Bật',
+        'new_item'           => 'Thêm Sản Phẩm Nổi Bật',
+        'edit_item'          => 'Sửa Sản Phẩm Nổi Bật',
+        'view_item'          => 'Xem Sản Phẩm Nổi Bật',
+        'all_items'          => 'Tất Cả Sản Phẩm Nổi Bật',
+        'search_items'       => 'Tìm Kiếm Sản Phẩm Nổi Bật',
+        'parent_item_colon'  => 'Sản Phẩm Nổi Bật Cha',
+        'not_found'          => 'Không Tìm Thấy Sản Phẩm Nổi Bật',
+        'not_found_in_trash' => 'Không Tìm Thấy Sản Phẩm Nổi Bật Trong Thùng Rác',
     );
 
     $args = array(
@@ -527,7 +527,7 @@ function create_product_featured_post_type() {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array('slug' => 'product-featured'),
+        'rewrite'            => array('slug' => 'san-pham-noi-bat'),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
@@ -535,7 +535,7 @@ function create_product_featured_post_type() {
         'supports'           => array('title', 'editor', 'thumbnail'),
     );
 
-    register_post_type('product_featured', $args);
+    register_post_type('san-pham-noi-bat', $args);
 }
 
 add_action('init', 'create_product_featured_post_type');
