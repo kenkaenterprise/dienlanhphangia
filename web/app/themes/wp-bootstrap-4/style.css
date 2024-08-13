@@ -930,10 +930,7 @@ div {
 }
 .sub-block .sub-title {
     margin: 10px;
-}
-
-.sub-block .sub-title a {
-    color: white;
+    color: #fff;
 }
 
 .swiper6 ul {
