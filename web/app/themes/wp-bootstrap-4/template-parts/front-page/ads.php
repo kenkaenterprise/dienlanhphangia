@@ -22,22 +22,21 @@ $b_link_3 = $banner_3['link'] ?: '#';
 ?>
 
 <div class="container">
-<div class="advertisement-block">
-
-    <div class="left-column">
+    <div class="advertisement-block">
+        <div class="left-column">
             <h2 class="ad-title text-uppercase"><?= $condition_title ?></h2>
             <p class="ad-description"><?= $condition_desc ?></p>
         </div>
         <div class="right-column">
-            <div class="sub-block" style="background-image: url('<?= esc_html($b_img_1) ?>');">
-                <h3 class="sub-title"><a href="<?= $b_link_1 ?>"><?= esc_html($b_title_1)?></a></h3>
-            </div>
-            <div class="sub-block" style="background-image: url('<?= esc_html($b_img_2) ?>');">
-                <h3 class="sub-title"><a href="<?= $b_link_2 ?>"><?= esc_html($b_title_2) ?></a></h3>
-            </div>
-            <div class="sub-block" style="background-image: url('<?= esc_html($b_img_3) ?>');">
-                <h3 class="sub-title"><a href="<?= $b_link_3 ?>"><?= esc_html($b_title_3) ?></a></h3>
-            </div>
+            <a class="sub-block" style="background-image: url('<?= esc_html($b_img_1) ?>');" href="<?= $b_link_1 ?>">
+                <span class="sub-title"><?= esc_html($b_title_1)?></span>
+            </a>
+            <a class="sub-block" style="background-image: url('<?= esc_html($b_img_2) ?>');" href="<?= $b_link_2 ?>">
+                <span class="sub-title"><?= esc_html($b_title_2) ?></span>
+            </a>
+            <a class="sub-block" style="background-image: url('<?= esc_html($b_img_3) ?>');" href="<?= $b_link_3 ?>">
+                <span class="sub-title"><?= esc_html($b_title_3) ?></span>
+            </a>
         </div>
     </div>
 </div>
