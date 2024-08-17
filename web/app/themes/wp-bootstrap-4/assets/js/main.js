@@ -254,6 +254,37 @@ var swiper6 = new Swiper('.swiper6', {
   }
 });
 
+var swiper7 = new Swiper('.swiper7', {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next_7',
+    prevEl: '.swiper-button-prev_7'
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    }
+  }
+});
+
 // END.
 
   // Gallery sản phẩm 
