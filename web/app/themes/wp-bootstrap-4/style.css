@@ -909,11 +909,12 @@ div {
 }
 
 .right-column {
-    flex: 0 0 80%; /* Fixed width of 75% */
+    flex: 0 0 80%;
     padding: 0 0 0 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
+    overflow: hidden;
 }
 
 .sub-block {
