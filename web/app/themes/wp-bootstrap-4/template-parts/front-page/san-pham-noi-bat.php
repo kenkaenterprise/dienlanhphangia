@@ -42,7 +42,7 @@ $product_feature_title = $grp_rel_prod['title']?? 'Sản phẩm phù hợp';
                                             
                                             <img src="<?php bloginfo( 'url' ); ?>/wp-content/themes/wp-bootstrap-4/assets/images/home/shadow.png" alt="">
                                             <div class="article__content">
-                                                <h5><a href="#" class="title text-uppercase text-center"><?php the_title(); ?></a></h5>
+                                                <h5><a href="<?= get_field('link') ?>" class="title text-uppercase text-center"><?php the_title(); ?></a></h5>
                                                 <?php echo $description; ?>
                                             </div>
                                         </article>
