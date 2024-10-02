@@ -539,3 +539,17 @@ function create_product_featured_post_type() {
 }
 
 add_action('init', 'create_product_featured_post_type');
+
+function create_certificate_post_type() {
+    register_post_type('certificate', [
+        'labels' => [
+            'name' => 'Certificates',
+            'singular_name' => 'Certificates',
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'supports' => ['title', 'thumbnail'],
+        'menu_icon' => 'dashicons-awards'
+    ]);
+}
+add_action('init', 'create_certificate_post_type');
