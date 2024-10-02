@@ -287,6 +287,23 @@ var swiper7 = new Swiper('.swiper7', {
 
 // END.
 
+  new Swiper('.certificates-carousel', {
+    slidesPerView: 3,
+    spaceBetween: 12,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  })
+
   // Gallery sản phẩm 
   jQuery('.gallery-sp').slick({
     slidesToShow: 1,

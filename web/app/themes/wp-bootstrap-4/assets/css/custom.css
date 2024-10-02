@@ -416,6 +416,31 @@ article.card:hover {
     transform: translate3d(0px, -5px, 0px);
 }
 
+.certificate-block {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.certificate-block .swiper-container {
+    padding: 10px;
+}
+
+.certificate-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+}
+
+.certificate-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 3px #009fe4;
+}
+
+.certificate-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /*Contact*/
 .top-contact {
     display: inline-block;
