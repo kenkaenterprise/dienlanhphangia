@@ -23,7 +23,6 @@ if ($certificates->have_posts()): ?>
                         </div>
                     <?php endwhile; ?>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>

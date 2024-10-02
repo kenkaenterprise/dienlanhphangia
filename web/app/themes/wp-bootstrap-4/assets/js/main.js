@@ -294,6 +294,10 @@ var swiper7 = new Swiper('.swiper7', {
       el: '.swiper-pagination',
       clickable: true,
     },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
     breakpoints: {
       640: {
         slidesPerView: 1,
