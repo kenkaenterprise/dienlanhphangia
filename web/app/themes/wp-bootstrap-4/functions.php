@@ -501,3 +501,41 @@ add_filter( 'admin_body_class', 'wpa66834_role_admin_body_class' );
 
 
 add_filter( 'use_block_editor_for_post', '__return_false' );
+
+function create_product_featured_post_type() {
+    $labels = array(
+        'name'               => 'Sản Phẩm Nổi Bật',
+        'singular_name'      => 'Sản Phẩm Nổi Bật',
+        'menu_name'          => 'Sản Phẩm Nổi Bật',
+        'name_admin_bar'     => 'Sản Phẩm Nổi Bật',
+        'add_new'            => 'Thêm Sản Phẩm Nổi Bật',
+        'add_new_item'       => 'Thêm Sản Phẩm Nổi Bật',
+        'new_item'           => 'Thêm Sản Phẩm Nổi Bật',
+        'edit_item'          => 'Sửa Sản Phẩm Nổi Bật',
+        'view_item'          => 'Xem Sản Phẩm Nổi Bật',
+        'all_items'          => 'Tất Cả Sản Phẩm Nổi Bật',
+        'search_items'       => 'Tìm Kiếm Sản Phẩm Nổi Bật',
+        'parent_item_colon'  => 'Sản Phẩm Nổi Bật Cha',
+        'not_found'          => 'Không Tìm Thấy Sản Phẩm Nổi Bật',
+        'not_found_in_trash' => 'Không Tìm Thấy Sản Phẩm Nổi Bật Trong Thùng Rác',
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array('slug' => 'san-pham-noi-bat'),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array('title', 'editor', 'thumbnail'),
+    );
+
+    register_post_type('san-pham-noi-bat', $args);
+}
+
+add_action('init', 'create_product_featured_post_type');
