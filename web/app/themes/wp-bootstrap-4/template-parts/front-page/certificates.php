@@ -23,6 +23,8 @@ if ($certificates->have_posts()): ?>
                         </div>
                     <?php endwhile; ?>
                 </div>
+                <div class="swiper-button-next fa fa-angle-right swiper-button-next_8"></div>
+                <div class="swiper-button-prev fa fa-angle-left swiper-button-prev_8"></div>
             </div>
         </div>
     </div>

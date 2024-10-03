@@ -293,6 +293,8 @@ var swiper7 = new Swiper('.swiper7', {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      nextEl: '.swiper-button-next_8',
+      prevEl: '.swiper-button-prev_8'
     },
     autoplay: {
       delay: 3000,
