@@ -10,7 +10,7 @@ if ($certificates->have_posts()): ?>
     <div class="container">
         <div class="certificate-block">
             <div class="section__title text-center">
-                <h6 class="text-uppercase">Chứng chỉ</h6>
+                <h6 class="text-uppercase">CHỨNG NHẬN & CHỨNG CHỈ</h6>
             </div>
             <div class="snowflake-divider"></div>
             <div class="swiper-container certificates-carousel">
