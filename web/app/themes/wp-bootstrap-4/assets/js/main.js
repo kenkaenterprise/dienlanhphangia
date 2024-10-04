@@ -290,9 +290,7 @@ var swiper7 = new Swiper('.swiper7', {
   new Swiper('.certificates-carousel', {
     slidesPerView: 3,
     spaceBetween: 12,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    navigation: {
       nextEl: '.swiper-button-next_8',
       prevEl: '.swiper-button-prev_8'
     },
