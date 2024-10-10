@@ -7,9 +7,11 @@ jQuery(window).scroll(function() {
     if (scroll >= 300) {
         jQuery(".header__menu").addClass("fixed");
         jQuery(".header__mobile").addClass("fixed");
+        jQuery(".header__main").addClass("fixed");
     } else {
         jQuery(".header__menu").removeClass("fixed");
         jQuery(".header__mobile").removeClass("fixed");
+        jQuery(".header__main").removeClass("fixed");
     }
 
 });

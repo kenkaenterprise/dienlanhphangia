@@ -342,6 +342,9 @@ body.custom-background .wp-bp-main-content .col-md-8 { background: #f8f9fa; padd
     z-index: 1000;
     animation: smoothScroll 1s forwards;
 }
+.header__menu.fixed {
+    top: 110px !important;
+}
 @keyframes smoothScroll {
     0% {
         transform: translateY(-40px);
